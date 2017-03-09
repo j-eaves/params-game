@@ -1,0 +1,10 @@
+Hello I am a form
+<%= form_tag "/submit_form", method: :post do %>
+  <div> 
+    <p>Enter message here: <input type="text" name="first_name"></p>
+    <p>Enter message here: <%= text_field_tag :last_name %></p>
+  </div>
+  <div>
+    <input type="submit" value= "SUBMIT">
+  </div>
+<%end%>
