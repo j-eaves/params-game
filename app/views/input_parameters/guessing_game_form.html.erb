@@ -1,0 +1,10 @@
+<h2>Welcome to the number guessing game</h2>
+<%= form_tag "/guessing_game", method: :post do %>
+  <div> 
+    <p>Please guess a number between 1 and 100:</p>
+    <p><input type="user_input" name="guessed_number"></p>
+  </div>
+  <div>
+    <input type="submit" value= "SUBMIT">
+  </div>
+<%end%>
